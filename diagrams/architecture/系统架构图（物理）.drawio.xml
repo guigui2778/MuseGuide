@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36 Edg/141.0.0.0" version="28.2.6">
+  <diagram name="系统架构图" id="ubo03divRaXm40eON8MX">
+    <mxGraphModel dx="1039" dy="1346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DSeuKfInofN1qG4IdCUl-1" value="Client [客户端]" style="swimlane;swimlaneFillColor=#f0f7ff;swimlaneLineColor=#409eff;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=49;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-353" y="-214" width="251" height="216" as="geometry">
+            <mxRectangle x="-326" y="-169" width="140" height="60" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-2" value="[用户浏览器]&#xa;Chrome/Firefox/Safari" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="DSeuKfInofN1qG4IdCUl-1">
+          <mxGeometry x="30.5" y="71" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-3" value="[管理员浏览器]&#xa;Chrome/Firefox" style="rect;fillColor=#e6f7ff;strokeColor=#1890ff;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="DSeuKfInofN1qG4IdCUl-1">
+          <mxGeometry x="30.5" y="144" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-4" value="Network [网络]&#xa;互联网/局域网&#xa;HTTPS" style="rect;fillColor=#f0fff4;strokeColor=#52c41a;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-54" y="-201" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-5" value="Server [服务器端]" style="swimlane;swimlaneFillColor=#fff0f0;swimlaneLineColor=#f5222d;swimlaneTextColor=#333;align=center;verticalAlign=top;spacingTop=10;spacingLeft=10;spacingRight=10;spacingBottom=10;overflow=hidden;whiteSpace=wrap;startSize=60;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="177" y="-214" width="460" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-7" value="[数据库服务器]&#xa;MySQL 8.0" style="rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="DSeuKfInofN1qG4IdCUl-5">
+          <mxGeometry x="250" y="113.5" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-6" value="[Web/应用服务器]&#xa;Spring Boot with Embedded Tomcat" style="rect;fillColor=#fff2f0;strokeColor=#fa8c16;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="DSeuKfInofN1qG4IdCUl-5">
+          <mxGeometry x="32" y="113.5" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-8" value="External [外部服务]&#xa;高德地图服务&#xa;JavaScript API" style="rect;fillColor=#f0f0ff;strokeColor=#722ed1;strokeWidth=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="364" y="75" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-9" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="DSeuKfInofN1qG4IdCUl-1" target="DSeuKfInofN1qG4IdCUl-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-10" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="DSeuKfInofN1qG4IdCUl-4" target="DSeuKfInofN1qG4IdCUl-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DSeuKfInofN1qG4IdCUl-13" style="edge;edgeStyle=orthogonalEdgeStyle;rounded=1;strokeColor=#666;strokeWidth=1;strokeDasharray=5,5;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;endArrow=classic;" edge="1" parent="1" source="DSeuKfInofN1qG4IdCUl-6" target="DSeuKfInofN1qG4IdCUl-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
